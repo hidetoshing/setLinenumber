@@ -20,7 +20,7 @@ augroup END
 noremap [Line] <Nop>
 
 " toggle line number
-If v:version >= 703
+if v:version >= 703
     command! -nargs=0 ToggleNumber call options_linenumber#toggle()
     nnoremap  <sient> [Line]r :<C-u>ToggleNumber<CR>
 endif
