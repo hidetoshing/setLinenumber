@@ -4,10 +4,10 @@ set cpo&vim
 
 """ action
 function! setLinenumber#toggle()
-    if &number
-        set relativenumber
-    else
+    if (&relativenumber == 1)
         set number
+    else
+        set relativenumber
     endif
 endfunction
 
