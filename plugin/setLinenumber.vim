@@ -1,12 +1,11 @@
 
-if exists("g:loaded_options_linenumber")
+if exists("g:loaded_setLinenumber")
   finish
 endif
-let g:loaded_options_linenumber = 1
+let g:loaded_setLinenumber = 1
 
 let s:save_cpo = &cpo
 set cpo&vim
-
 
 set number
 set cursorline
@@ -21,7 +20,7 @@ noremap [Line] <Nop>
 
 " toggle line number
 if v:version >= 703
-    command! -nargs=0 ToggleNumber call options_linenumber#toggle()
+    command! -nargs=0 ToggleNumber call setLinenumber#toggle()
     nnoremap  <sient> [Line]r :<C-u>ToggleNumber<CR>
 endif
 

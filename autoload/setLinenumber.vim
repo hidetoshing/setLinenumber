@@ -3,7 +3,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 """ action
-function! options_linenumber#toggle()
+function! setLinenumber#toggle()
     if &number
         set relativenumber
     else
